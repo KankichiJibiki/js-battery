@@ -218,6 +218,10 @@ brandSelect.addEventListener('change', function(event){
 modelSelect.addEventListener('change', function(){
     displayBatteryList();
 });
+document.getElementById('power').addEventListener('change', function(){
+    console.log(document.getElementById('power').value);
+    displayBatteryList();
+});
 
 let selectedBrandIndex = brandSelect.selectedIndex;
 let selectModelIndex = modelSelect.selectedIndex;
